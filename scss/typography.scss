@@ -1,0 +1,37 @@
+.btn{
+    text-transform: uppercase;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+}
+
+.header-area{
+    margin-bottom: 75px;
+    h2{
+        line-height: 140%;
+        margin-bottom:0;
+        text-transform: capitalize;
+    }
+    p{
+        margin-bottom:0;
+        margin-top: 5px;
+        color: $secondary;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    h3{
+        line-height: 140%;
+        font-size: 2rem;
+        span{
+            color: $primary;
+            display: inline-block;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.w-45{
+    width: 45% !important;
+}
+.w-10{
+    width: 10% !important;
+}

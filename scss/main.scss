@@ -1,0 +1,27 @@
+$primary: #43b400;
+$secondary: #005aa9;
+$font-family-base: 'Open Sans', sans-serif;
+$body-color: #57606a;
+
+
+// Headings
+$headings-font-family: 'Poppins', sans-serif;
+$headings-font-weight: 600;
+$headings-color: #232323;
+
+// Buttons
+$btn-font-size: 14px;
+$btn-font-weight: 600;
+$btn-border-radius: 30px;
+$btn-padding-x: 28px;
+$btn-padding-y: 14px;
+$btn-hover-bg-shade-amount: null;
+
+// Carousel
+$carousel-indicator-active-bg: $primary;
+
+// $enable-caret: false;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./typography.scss";
+@import "./style.scss";
