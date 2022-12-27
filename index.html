@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAI</title>
+    <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -16,7 +17,7 @@
 
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="./public/images/logo.png" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="./public/images/logo-top.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,10 +31,22 @@
                             About Us
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Introduction</a></li>
+                                <li><a class="dropdown-item" href="#">Message From CEO</a></li>
+                                <li><a class="dropdown-item" href="#">Team</a></li>
+                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Artificial Intelligence</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Transformation</a></li>
+                                <li><a class="dropdown-item" href="#">Web System Development</a></li>
+                                <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                                <li><a class="dropdown-item" href="#">UI/UX</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -51,7 +64,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">English</a></li>
-                                <li><a class="dropdown-item" href="#">Japanese</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Japanese</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -437,7 +450,7 @@
         </div>
     </section>
 
-    <section class="workflow-section">
+    <!-- <section class="workflow-section">
         <div class="position-absolute top-0 bottom-0 workflow-section_line"></div>
         <div class="container">
             <div class="row">
@@ -605,9 +618,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="team-section">
+      <section class="team-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -741,6 +754,62 @@
         </div>
     </section>
 
+    <section class="featured-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <h4>Advisory</h4>
+                    <p>Our team leaders are distinguished by their repeated success through multiple organisations. They have all previously held leadership roles in professional services and industry.</p>
+
+                    <p>Their teams are primarily composed of our clients’ staff, with industry or technical specialists as required.</p>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="featured-section_people col-md-4">
+                            <div class="featured-section_people-wrapper position-relative">
+                                <img src="./public/images/team/4.png" alt="" class="mw-100 w-100">
+                                <div class="featured-section_people-name">
+                                        <h6>Mr. Sugiyama Kenichi</h6>
+                                </div>
+                                <div class="overlay">
+                                    <h6>Mr. Sugiyama Kenichi</h6>
+                                    <p>Senior Advisor, Division of External Relations, University of Tokyo. Former Vice Board Director, University of Tokyo. Former Chief Advisor of the President, University of Tokyo. Former Representative Director, Tonen General Sekiyu Corporation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="featured-section_people col-md-4">
+                            <div class="featured-section_people-wrapper position-relative">
+
+                                <img src="./public/images/team/5.jpg" alt="" class="mw-100 w-100">
+                                <div class="featured-section_people-name">
+                                    <h6>Dr. Kundan Chaudhary</h6>
+                                </div>
+                                <div class="overlay">
+                                    <h6>Dr. Kundan Chaudhary</h6>
+                                    <p>Dr. Kundan completed his Ph.D. at the well-reputed Harvard University majoring in Applied Physics. Started his career path working for Apple Inc. in Silicon Valley. Now he's a committed employee working for Meta Platforms Inc. (formerly Facebook Inc.)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-section_content d-flex align-items-center justify-content-evenly">
+                        <h2>Have A Project In Mind?</h2>
+                        <a href="#" class="btn btn-primary">Let's Discuss</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-top">
             <div class="container">
@@ -829,14 +898,13 @@
             asNavFor: '.team-nav'
         });
         $('.team-nav').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
+            slidesToShow: 4,
             loop: true,
             asNavFor: '.team-for',
             dots: false,
             centerMode: false,
             focusOnSelect: true,
-            arrows: false,
+            arrows: false   ,
         });
     </script>
 </body> 

@@ -1,7 +1,7 @@
 // Navigation Bar
 .navbar-brand {
     img{
-        max-width: 50px;
+        max-width: 129px;
     }
 }
 
@@ -44,7 +44,7 @@
 // Banner Area
 .banner-section{
     padding-top: 216px;
-    background: #f5fafe;
+    background-color: #f5fafe;
     h1{
         font-size: 48px;
         margin-bottom: 20px;
@@ -67,11 +67,12 @@
             max-width: 469px;
         }
     }
+    
 }
 
 .whyus{
-    padding: 0 0 50px;
-    margin-top: -89px;
+    margin-top: -169px;
+    padding: 50px 0;
     background: transparent linear-gradient(180deg,#fff 0,#f8f8f8 100%) 0 0 no-repeat padding-box;
     &_content{
         margin-bottom: 75px;
@@ -238,16 +239,71 @@
         border-radius: 50px;
     }
 }
-
+.featured-section{
+    padding: 50px 0;
+    &_people{
+        &-wrapper{
+            &:hover{
+                cursor: pointer;
+                .overlay{
+                    opacity: 1;
+                }
+            }
+        }
+        img{
+            border-radius: 9px 9px 0 0  ;
+        }
+        &-name{
+            background: #f8f8f8;
+            width: 100%;
+            bottom:0;
+            padding: 9px 0;
+            border-radius: 0 0 9px 9px;
+            h6{
+                color: #242424;
+                text-align: center;
+                font-size:14px;
+            }
+        }
+        .overlay{
+            position: absolute;
+            top:0;   
+            right:0;
+            bottom:0;
+            left:0;
+            background: rgba(0, 90, 169, .9);
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 9px;
+            transition: all ease-in-out 500ms;
+            -ms-transition: all ease-in-out 500ms;
+            -moz-transition: all ease-in-out 500ms;
+            -webkit-transition: all ease-in-out 500ms;
+            padding: 12px 9px;
+            h6{
+                color: #ffffff;
+                text-align:center;
+                font-size: 14px;
+            }
+            p{
+                text-align: center;
+                font-size: 13px;
+                color: #ffffff;
+            }
+        }
+    }
+}
 .team-section{
     padding: 50px 0;
+    // background: transparent linear-gradient(180deg,#fff 0,#f8f8f8 100%) 0 0 no-repeat padding-box;
     .team-nav{
         text-align: center;
         .slick-slide{
             &.slick-current{
                 figure{
                     .overlay{
-                        opacity: 0.5;
+                        opacity: 1;
                     }
                     h6{
                         opacity: 1;
@@ -263,7 +319,7 @@
             &:hover{
                 cursor: pointer;
                 .overlay{
-                    opacity: 0.5;
+                    opacity: 1;
                 }
                 h6{
                     opacity: 1;
@@ -290,7 +346,7 @@
                 right:0;
                 bottom:0;
                 left:0;
-                background: $secondary;
+                background: rgba(0, 90, 169, .6);
                 opacity: 0;
                 height: 100%;
                 width: 100%;
@@ -301,7 +357,7 @@
                 -webkit-transition: all ease-in-out 500ms;
             }
             img{
-                max-width: 171px;
+                max-width: 252px;
                 border-radius: 9px;
             }
         }
@@ -335,6 +391,21 @@
         }
     }
 }
+
+.contact-section{
+    padding: 50px 0;
+    &_content{
+        padding: 24px 0;
+        // background: darken(#f5fafe, 3%);
+        background: #f8f8f8;
+        border-radius: 18px;
+        h2{
+            margin-bottom:0;
+            letter-spacing: 2px;
+        }
+    }
+}
+
 footer{
     padding: 50px 0 0;
     background: #101614;
@@ -365,7 +436,6 @@ footer{
         }
     }
 }
-
 .footer-bottom{
     padding: 15px 0;
     p{
