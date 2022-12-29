@@ -20,6 +20,28 @@ $btn-hover-bg-shade-amount: null;
 // Carousel
 $carousel-indicator-active-bg: $primary;
 
+// Form
+$input-btn-focus-box-shadow: none;
+$input-border-radius: 3px;
+$input-padding-y:6px;
+$input-padding-x:9px;
+$input-font-size: 14px;
+$input-border-color:  #ddd;
+$input-focus-border-color: darken($primary, 5%);
+
+// Dropdown
+$dropdown-padding-y: 0;
+$dropdown-padding-x: 0;
+$dropdown-border-color: #f8f8f8;
+$dropdown-border-radius: 3px;
+$dropdown-link-color: #242424;
+$dropdown-link-hover-bg: #f8f8f8;
+$dropdown-link-active-bg: #f8f8f8;
+$dropdown-item-padding-y: 12px;
+$dropdown-item-padding-x: 15px;
+$dropdown-link-active-color: #242424    ;
+
+
 // $enable-caret: false;
 
 @import "../node_modules/bootstrap/scss/bootstrap";

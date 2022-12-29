@@ -35,3 +35,72 @@
 .w-10{
     width: 10% !important;
 }
+.mw-15{
+    max-width: 15% !important;
+}
+
+.dropdown-toggle{
+    &.show{
+        transition: transform ease-in-out 500ms;
+        -ms-transition: transform ease-in-out 500ms;
+        -moz-transition: transform ease-in-out 500ms;
+        -webkit-transition: transform ease-in-out 500ms;
+        &::after{
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.blinking {
+    -webkit-animation: 1.2s blink ease-in-out infinite;
+    -moz-animation: 1.2s blink ease-in-out infinite;
+    -ms-animation: 1.2s blink ease-in-out infinite;
+    -o-animation: 1.2s blink ease-in-out infinite;
+    animation: 1.2s blink ease-in-out infinite;
+    
+  }
+  
+  @keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes blink {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
