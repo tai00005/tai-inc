@@ -8400,7 +8400,7 @@ textarea.form-control-lg {
   letter-spacing: 1px; }
 
 .header-area {
-  margin-bottom: 75px; }
+  margin-bottom: 54px; }
   .header-area h2, .header-area .h2 {
     line-height: 140%;
     margin-bottom: 0;
@@ -8505,24 +8505,39 @@ textarea.form-control-lg {
     font-weight: 500; }
 
 .banner-section {
-  padding-top: 216px;
   background-color: #f5fafe; }
+  .banner-section_content {
+    top: 50%;
+    transform: translateY(-50%); }
+  .banner-section .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); }
   .banner-section h1, .banner-section .h1 {
-    font-size: 48px;
+    font-size: 27px;
     margin-bottom: 20px;
-    line-height: 55px; }
+    line-height: 51px;
+    color: #ffffff; }
     .banner-section h1 span, .banner-section .h1 span {
       display: inline-block;
-      color: #43b400; }
+      color: #ffffff;
+      font-size: 51px; }
+      .banner-section h1 span div, .banner-section .h1 span div {
+        color: #BC002D; }
   .banner-section p {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: #ffffff; }
   .banner-section_buttons .btn {
     margin-right: 10px; }
   .banner-section_image img {
     max-width: 469px; }
 
 .whyus {
-  margin-top: -169px;
   padding: 42px 0;
   background: transparent linear-gradient(180deg, #fff 0, #f8f8f8 100%) 0 0 no-repeat padding-box; }
   .whyus .card {
@@ -8530,45 +8545,64 @@ textarea.form-control-lg {
     box-shadow: 0 0 0 1px rgba(53, 72, 91, 0.04), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
     border: none;
     text-align: center;
-    border-radius: 6px; }
+    border-radius: 6px 6px 3px 3px;
+    border-top: 2px solid #43b400; }
     .whyus .card h5, .whyus .card .h5 {
+      text-align: center;
+      color: #005aa9;
+      margin-bottom: 15px; }
+    .whyus .card h6, .whyus .card .h6 {
       text-align: center; }
     .whyus .card p {
-      text-align: center; }
+      text-align: center;
+      font-size: 15px; }
     .whyus .card img {
       border-radius: 50%;
       max-width: 210px;
       margin: 0 auto; }
     .whyus .card .card-body {
       padding: 15px 0 0; }
+    .whyus .card .btn {
+      padding: 9px 21px; }
   .whyus_content {
-    margin-bottom: 27px; }
+    margin-bottom: 27px;
+    padding: 18px 21px 21px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 9px #e3e3e3;
+    border-top: 2px solid #43b400;
+    border-radius: 6px 6px 3px 3px;
+    height: 252px;
+    overflow: hidden; }
     .whyus_content-icon {
-      height: 69px;
-      width: 69px;
+      flex: none;
+      height: 45px;
+      width: 45px;
       border-radius: 50px;
       background: #005aa9;
       color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 27px;
+      font-size: 18px;
       line-height: 69px; }
     .whyus_content-text h5, .whyus_content-text .h5 {
-      margin-bottom: 20px;
-      font-weight: 600; }
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-left: 15px; }
     .whyus_content-text p {
-      line-height: 1.55;
-      margin-bottom: 0; }
+      margin-top: 18px;
+      margin-bottom: 0;
+      font-size: 15px; }
 
-.partner {
+.partner-section {
   padding: 50px 0; }
-  .partner_logo .col {
-    padding: 15px; }
+  .partner-section_logo .col {
+    padding: 15px 21px;
+    flex-grow: 0; }
 
 .service-section {
   padding: 50px 0;
-  background: transparent linear-gradient(180deg, #fff 0, #f8f8f8 100%) 0 0 no-repeat padding-box; }
+  background: transparent linear-gradient(180deg, #fff 0, #f0f0f0 100%) 0 0 no-repeat padding-box; }
   .service-section .service-nav .slick-slide {
     cursor: pointer; }
     .service-section .service-nav .slick-slide:hover img {
@@ -8614,7 +8648,8 @@ textarea.form-control-lg {
       padding: 42px 33px;
       background: #ffffff;
       border-radius: 12px;
-      margin-top: 25px; }
+      margin: 25px 25px;
+      box-shadow: 2px 4px 9px #e3e3e3; }
       .service-section .service-for .slick-slide::before {
         content: '';
         position: absolute;
@@ -8637,25 +8672,29 @@ textarea.form-control-lg {
     z-index: 10;
     position: relative;
     padding: 18px 0; }
-  .workflow-section_wrapper .container {
-    max-width: 900px; }
+  .workflow-section_wrapper {
+    flex: 0 0 auto;
+    width: 30%;
+    position: relative; }
   .workflow-section_line {
-    left: 50%;
-    width: 3px;
+    width: 100%;
+    height: 3px;
     background-color: #6e7781;
     opacity: .1;
-    transform: translateX(-50%); }
+    margin: 27px 0; }
   .workflow-section_box {
     box-shadow: 0 0 0 1px rgba(53, 72, 91, 0.04), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
     padding: 33px;
     background: #ffffff;
     border-radius: 12px; }
-  .workflow-section_dot {
+  .workflow-section_dot-top {
     width: 33px;
     height: 33px;
     border: 3px solid #fafbfc;
     background-color: #242424;
-    border-radius: 50px; }
+    border-radius: 50px;
+    position: absolute;
+    bottom: -43px; }
 
 .featured-section {
   padding: 50px 0;
@@ -8672,15 +8711,20 @@ textarea.form-control-lg {
     background-color: #ffffff;
     box-shadow: 0 0 0 1px rgba(53, 72, 91, 0.04), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
     border-radius: 6px; }
-  .featured-section_people img {
-    border-radius: 6px 6px 0 0; }
+  .featured-section_people figure {
+    margin-bottom: 0; }
+    .featured-section_people figure img {
+      max-width: 100%;
+      width: 100%; }
   .featured-section_people .overlay {
     bottom: 0;
     opacity: .9;
     background-color: #005aa9;
     height: 20%;
+    opacity: 0.5;
     width: 100%;
-    opacity: 0.5; }
+    left: 50%;
+    transform: translateX(-50%); }
   .featured-section_people h6, .featured-section_people .h6 {
     position: absolute;
     bottom: 16px;
@@ -8747,7 +8791,7 @@ textarea.form-control-lg {
   .team-section .team-for {
     margin-top: 33px;
     border-radius: 12px;
-    background-color: #f8f8f8;
+    background: linear-gradient(to top, #00529a, #004a8a 45%, #00427b 100%);
     box-shadow: 0 0 0 1px rgba(53, 72, 91, 0.04), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important; }
     .team-section .team-for figure {
       margin-bottom: 0; }
@@ -8756,6 +8800,7 @@ textarea.form-control-lg {
     .team-section .team-for_details {
       padding: 33px 26px 18px; }
       .team-section .team-for_details h3, .team-section .team-for_details .h3 {
+        color: #ffffff;
         text-transform: uppercase;
         line-height: 114%;
         margin-bottom: 15px; }
@@ -8763,17 +8808,24 @@ textarea.form-control-lg {
           font-size: 14px;
           display: block;
           text-transform: capitalize; }
+      .team-section .team-for_details p {
+        color: #ffffff; }
+
+.faq-section {
+  padding: 50px 0; }
 
 .contact-section {
-  padding: 50px 0; }
+  padding: 50px 0;
+  background: transparent linear-gradient(180deg, #fff 0, #f0f0f0 100%) 0 0 no-repeat padding-box; }
   .contact-section form {
     padding: 27px;
     background-color: #ffffff;
     box-shadow: 0 0 9px #e3e3e3;
     border-radius: 6px;
     border: 1px solid #dddddd; }
-    .contact-section form h5, .contact-section form .h5 {
-      color: #43b400; }
+    .contact-section form > p {
+      color: #43b400;
+      font-weight: 600; }
     .contact-section form .form-control {
       font-size: 15px;
       border: 0;
@@ -8781,13 +8833,12 @@ textarea.form-control-lg {
       border-radius: 0;
       padding: 2px; }
       .contact-section form .form-control:focus {
-        border-bottom: 1px solid #005aa9; }
+        border-bottom: 1px solid #43b400; }
         .contact-section form .form-control:focus + label {
-          color: #005aa9; }
+          color: #43b400; }
     .contact-section form label {
-      margin-bottom: 0;
+      margin-bottom: 2px;
       color: #7c7d7d;
-      font-weight: 500;
       font-size: 15px;
       line-height: 18px; }
     .contact-section form .btn {
@@ -8809,7 +8860,7 @@ textarea.form-control-lg {
     top: 45%;
     right: 18%; }
   .contact-section_content {
-    padding-left: 75px; }
+    padding-left: 63px; }
 
 .contact-form {
   padding: 150px; }

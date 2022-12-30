@@ -50,19 +50,41 @@
 
 // Banner Area
 .banner-section{
-    padding-top: 216px;
+    // padding-top: 216px;
+    // margin-top: 80px;
     background-color: #f5fafe;
+    &_content{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .overlay{
+        position: absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color: rgba(0, 0, 0, .4);
+    }
     h1{
-        font-size: 48px;
-        margin-bottom: 20px;
-        line-height: 55px;
+        font-size: 27px;
+        margin-bottom: 20px;   
+        line-height: 51px;
+        color: #ffffff;
         span{
+     
             display: inline-block;
-            color: $primary;
+            color: #ffffff;
+            font-size: 51px;
+            div{
+               color: #BC002D;
+            }
         }
     }
     p{
         margin-bottom: 30px;
+        color: #ffffff;
     }
     &_buttons{
         .btn{
@@ -78,7 +100,7 @@
 }
 
 .whyus{
-    margin-top: -169px;
+    // margin-top: -169px;
     padding: 42px 0;
     background: transparent linear-gradient(180deg,#fff 0,#f8f8f8 100%) 0 0 no-repeat padding-box;
     .card{
@@ -87,12 +109,19 @@
         // background: #ffffff;
         border: none;
         text-align: center;
-        border-radius: 6px;
+        border-radius: 6px 6px 3px 3px;
+        border-top: 2px solid $primary;
         h5{
+            text-align: center;
+            color: $secondary;
+            margin-bottom: 15px;   
+        }
+        h6{
             text-align: center;
         }
         p{
             text-align: center;
+            font-size: 15px;
         }
         img{
             border-radius: 50%; 
@@ -102,48 +131,62 @@
         .card-body{
             padding: 15px 0 0;
         }
+        .btn{
+            padding: 9px 21px;
+        }
     }
     &_content{
         margin-bottom: 27px;
+        padding: 18px 21px 21px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 9px #e3e3e3;
+        border-top: 2px solid $primary;
+        border-radius: 6px 6px 3px 3px;
+        height: 252px;
+        overflow: hidden;
 
         &-icon{
-            height: 69px;
-            width: 69px;
+            flex: none;
+            height: 45px;
+            width: 45px;
             border-radius: 50px;
             background: $secondary;
             color: #ffffff;
             display:flex;
             align-items: center;
             justify-content: center;
-            font-size: 27px;
+            font-size: 18px;
             line-height: 69px;
         }
         &-text{
             h5{
-                margin-bottom: 20px;
                 font-weight: 600;
+                text-transform: capitalize;
+                margin-left: 15px;
             }
             p{
-                line-height: 1.55;
+                margin-top: 18px;
                 margin-bottom: 0;
+                font-size: 15px;
             }
         }
     }
 }
 
-.partner {
+.partner-section{
     padding: 50px 0;
    &_logo{
 
     .col{
-        padding: 15px;
+        padding: 15px 21px;
+        flex-grow: 0;
     }
    }
 }
 
 .service-section{
     padding: 50px 0;
-     background: transparent linear-gradient(180deg,#fff 0,#f8f8f8 100%) 0 0 no-repeat padding-box;
+     background: transparent linear-gradient(180deg,#fff 0,darken(#f8f8f8, 3%) 100%) 0 0 no-repeat padding-box;
     .service-nav{
         .slick-slide{
             cursor:pointer;
@@ -208,8 +251,8 @@
             padding: 42px 33px;
             background: #ffffff;
             border-radius: 12px;
-            margin-top: 25px;
-
+            margin: 25px 25px; 
+            box-shadow: 2px 4px 9px #e3e3e3;
             &::before{
                 content: '';
                 position: absolute;
@@ -241,17 +284,17 @@
     }
 
     &_wrapper{
-        .container{
-            max-width: 900px;
-        }
+        flex: 0 0 auto;
+        width: 30%;
+        position: relative;
     }
 
     &_line{
-        left: 50%;
-        width: 3px;
+        width: 100%;
+        height: 3px;
         background-color: #6e7781;
         opacity: .1;
-        transform: translateX(-50%);
+        margin: 27px 0;
     }
     &_box{
         box-shadow: 0 0 0 1px rgba(53, 72, 91, .04), 0 3px 2px rgba(0, 0, 0, .04), 0 7px 5px rgba(0, 0, 0, .02), 0 13px 10px rgba(0, 0, 0, .02), 0 22px 17px rgba(0, 0, 0, .02) !important;
@@ -259,12 +302,15 @@
         background: #ffffff;
         border-radius: 12px;
     }
-    &_dot{
+    &_dot-top{
         width: 33px;
         height: 33px;
         border: 3px solid #fafbfc;
         background-color: #242424;
         border-radius: 50px;
+        position: absolute;
+        bottom: -43px;  
+        
     }
 }
 .featured-section{
@@ -287,16 +333,22 @@
         border-radius: 6px;
     }
     &_people{
-        img{
-            border-radius: 6px 6px 0 0;
+        figure{
+            margin-bottom: 0;
+            img{
+                max-width: 100%;
+                width: 100%;
+            }
         }
         .overlay{
             bottom:0;
             opacity: .9;
             background-color: $secondary;
             height: 20%;
-            width: 100%;
             opacity: 0.5;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
         }
         h6{
             position:absolute;
@@ -384,8 +436,7 @@
     .team-for{
         margin-top: 33px;
         border-radius: 12px;
-        // background: linear-gradient(to top, darken($secondary, 5%), darken($secondary, 10%) 45%, darken($secondary, 15%) 100%);
-        background-color: #f8f8f8;
+        background: linear-gradient(to top, darken($secondary, 3%), darken($secondary, 6%) 45%, darken($secondary, 9%) 100%);
         box-shadow: 0 0 0 1px rgba(53, 72, 91, .04), 0 3px 2px rgba(0, 0, 0, .04), 0 7px 5px rgba(0, 0, 0, .02), 0 13px 10px rgba(0, 0, 0, .02), 0 22px 17px rgba(0, 0, 0, .02) !important;
         figure{
             margin-bottom: 0;
@@ -396,7 +447,7 @@
         &_details{
             padding: 33px 26px 18px;
             h3{
-                // color: #ffffff;
+                color: #ffffff;
                 text-transform: uppercase;
                 line-height: 114%;
                 span{
@@ -407,22 +458,28 @@
                 margin-bottom: 15px;
             }
             p{
-                // color: #ffffff;  
+                color: #ffffff;  
             }
         }
     }
 }
 
+.faq-section{
+    padding: 50px 0;
+}
+
 .contact-section{
     padding: 50px 0;
+    background: transparent linear-gradient(180deg,#fff 0,darken(#f8f8f8, 3%) 100%) 0 0 no-repeat padding-box;
     form{
         padding: 27px;
         background-color: #ffffff;
         box-shadow: 0 0 9px #e3e3e3;
         border-radius: 6px;
         border: 1px solid #dddddd;
-          h5{
+          & > p{
             color: $primary; 
+            font-weight: 600;
           }
           .form-control{
             font-size: 15px;
@@ -431,16 +488,15 @@
             border-radius: 0;
             padding: 2px;
             &:focus{
-                border-bottom: 1px solid $secondary;
+                border-bottom: 1px solid $primary;
                 & + label{
-                    color: $secondary;
+                    color: $primary;
                 }
             }
           }
           label{
-            margin-bottom:0;
+            margin-bottom:2px;
             color: #7c7d7d;
-            font-weight: 500;
             font-size:15px;
             line-height: 18px;
           }   
@@ -473,7 +529,7 @@
         }
     }
     &_content{
-        padding-left: 75px;
+        padding-left: 63px;
     }
 }
 
