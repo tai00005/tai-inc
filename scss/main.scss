@@ -39,7 +39,21 @@ $dropdown-link-hover-bg: #f8f8f8;
 $dropdown-link-active-bg: #f8f8f8;
 $dropdown-item-padding-y: 12px;
 $dropdown-item-padding-x: 15px;
-$dropdown-link-active-color: #242424    ;
+$dropdown-link-active-color: #242424;
+
+// Accordion
+$accordion-border-width: 0;
+$accordion-border-radius: 3px;
+$accordion-button-active-bg: lighten($primary, 3%);
+$accordion-button-active-color: #ffffff;
+$accordion-button-bg: darken(#f8f8f8, 3%);
+$accordion-button-padding-y: 21px;
+$accordion-button-padding-x: 15px;
+$accordion-body-padding-y: 21px;
+$accordion-body-padding-x: 21px;
+$accordion-icon-color: lighten($primary, 3%);
+$accordion-icon-active-color: #ffffff;    
+
 
 
 // $enable-caret: false;

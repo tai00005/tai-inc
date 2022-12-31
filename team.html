@@ -1,0 +1,201 @@
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="team-nav">
+                <div>
+                    <div class="team-nav_content">
+                        <figure>
+                            <div class="overlay"></div>
+                            <h6>Anish Man Shrestha</h6>
+                            <img src="./public/images/team/1.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <div class="team-nav_content">
+                        <figure>
+                            <div class="overlay"></div>
+                            <h6>Aadhar Lamichhane</h6>
+                            <img src="./public/images/team/2.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <div class="team-nav_content">
+                        <figure>
+                            <div class="overlay"></div>
+                            <h6>Yuko Kaneta</h6>
+                            <img src="./public/images/team/3.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="team-for">
+        <div>
+            <div class="row">
+                <div class="col-md-3">
+                    <figure>
+                        <img src="./public/images/team/1.png" alt="" class="mw-100">
+                    </figure>
+                </div>
+                <div class="col-md-9">
+                    <div class="team-for_details">
+                        <h3>Ashish Man Shrestha 
+                        <span>Chief Technology Officer</span>
+                        </h3>
+                        <p>Mr. Shrestha is a receipt of prestigious MEXT Scholarship. He obtained his Bachelor's and Master's Degree from Tokyo Institute of Technology. He has worked as software engineer at NEC Corporaton and Nomura Securities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-md-3">
+                    <figure>
+                        <img src="./public/images/team/2.jpg" alt="" class="mw-100">
+                    </figure>
+                </div>
+                <div class="col-md-9">
+                    <div class="team-for_details">
+                        <h3>Aadhar Lamichhane
+                        <span>Chief Business Officer</span>
+                        </h3>
+                        <p>Bachelors: Tohoku Gakuin University (2009) Aeon Retail Co, Ltd (2013) He was assigned to the Tohoku Company and was in charge of a wide range of operations from sales to public relations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-md-3">
+                    <figure>
+                        <img src="./public/images/team/3.png" alt="" class="mw-100">
+                    </figure>
+                </div>
+                <div class="col-md-9">
+                    <div class="team-for_details">
+                        <h3>Yuko Kaneta
+                        <span>Chief Marketing Officer</span>
+                        </h3>
+                        <p>After graduating from Tsukuba University, she joined Japan Airlines Co. In 2016, she joined the NPO YouMe Nepal and built a school in Nepal. She is currently providing education to more than 500 children. She joined TAI in 2022 as Chief Marketing Officer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+$('.team-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    autoplay: false,
+    asNavFor: '.team-nav'
+});
+$('.team-nav').slick({
+    slidesToShow: 3,
+    loop: true,
+    asNavFor: '.team-for',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    arrows: false,
+});
+
+.team-nav{
+    text-align: center;
+    .slick-slide{
+        &.slick-current{
+            figure{
+                .overlay{
+                    opacity: 1;
+                }
+                h6{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    figure{
+        max-width: fit-content;
+        margin: 0;
+        position: relative;
+        border-radius: 9px;
+        &:hover{
+            cursor: pointer;
+            .overlay{
+                opacity: 1;
+            }
+            h6{
+                opacity: 1;
+            }
+        }
+        h6{
+            position: absolute;
+            font-size: 12px;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            width: 100%;
+            opacity: 0;
+            text-transform: uppercase;
+            transition: all ease-in-out 500ms;
+            -ms-transition: all ease-in-out 500ms;
+            -moz-transition: all ease-in-out 500ms;
+            -webkit-transition: all ease-in-out 500ms;
+        }
+        .overlay{
+            position: absolute;
+            top:0;   
+            right:0;
+            bottom:0;
+            left:0;
+            background: rgba(0, 90, 169, .6);
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 9px;
+            transition: all ease-in-out 500ms;
+            -ms-transition: all ease-in-out 500ms;
+            -moz-transition: all ease-in-out 500ms;
+            -webkit-transition: all ease-in-out 500ms;
+        }
+        img{
+            max-width: 171px;
+            border-radius: 9px;
+        }
+    }
+}
+.team-for{
+    margin-top: 33px;
+    border-radius: 12px;
+    background: linear-gradient(to top, darken($secondary, 3%), darken($secondary, 6%) 45%, darken($secondary, 9%) 100%);
+    box-shadow: 0 0 0 1px rgba(53, 72, 91, .04), 0 3px 2px rgba(0, 0, 0, .04), 0 7px 5px rgba(0, 0, 0, .02), 0 13px 10px rgba(0, 0, 0, .02), 0 22px 17px rgba(0, 0, 0, .02) !important;
+    figure{
+        margin-bottom: 0;
+        img{
+            border-radius: 12px 0 0 12px;
+        }
+    }
+    &_details{
+        padding: 33px 26px 18px;
+        h3{
+            color: #ffffff;
+            text-transform: uppercase;
+            line-height: 114%;
+            span{
+                font-size:14px;
+                display: block;
+                text-transform: capitalize;
+            }
+            margin-bottom: 15px;
+        }
+        p{
+            color: #ffffff;  
+        }
+    }
+}
