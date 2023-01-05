@@ -20,7 +20,7 @@
     }
     h3{
         line-height: 140%;
-        font-size: 2rem;
+        font-size: 32px;
         span{
             color: $primary;
             display: inline-block;
@@ -28,12 +28,11 @@
         }
     }
 }
-
-.w-45{
-    width: 45% !important;
+.navbar-toggler:focus{
+  box-shadow: none;
 }
-.w-10{
-    width: 10% !important;
+.navbar-toggler{
+  border: 2 px solid $primary;
 }
 .mw-180{
     max-width: 1800px !important;  
@@ -41,6 +40,25 @@
 .p-100{
   padding-left: 103px !important;   
 }
+
+.page-banner{
+  margin-top: 80px;
+  &_content{
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%, -50%);  
+      h1{
+          color: #ffffff;  
+          margin-bottom:0;
+          font-size: 48px;
+      }    
+  }
+  img{
+      height: 240px;
+      object-fit: cover;
+  }
+}
+
 .accordion-button{
   margin-bottom: 3px;
   font-size: 18px;

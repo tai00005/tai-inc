@@ -1,0 +1,26 @@
+.ceo{
+    padding: 81px 0;
+    &_quote{
+        position: relative;
+        width: fit-content;
+        h2{
+            margin-bottom: 81px;
+        }
+        &::before{
+            content: url("../images/left-quote.png");
+            position: absolute;
+            left: -53px;
+            top: -44px;
+            z-index: -1;
+            opacity: .6;
+        }
+        &::after{
+            content: url("../images/right-quote.png");
+            position: absolute;
+            right: -50px;
+            bottom: -52px;
+            z-index: -1;
+            opacity: .6;
+        }
+    }
+}

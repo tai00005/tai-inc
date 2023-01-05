@@ -1,0 +1,47 @@
+.aboutus{
+    padding: 50px 0;  
+    &_content{
+        border: 1px solid #bfc1c3;
+        padding: 36px 54px;
+        img{
+            max-width: 72px;
+        }
+        h4{
+            margin: 21px 0;
+        }
+        p{
+            margin-bottom:0;
+        }
+    } 
+}   
+
+.company-info{
+    padding: 50px 0;
+    background: linear-gradient(to bottom, lighten($secondary, 3%), darken($secondary, 6%) 45%, darken($secondary, 9%) 100%);
+    .header-area{
+        h2{
+            color: #ffffff;  
+        }
+    }
+    &_wrapper{
+        padding-left: 54px;
+        ul{
+            padding:0;
+            li{
+                flex: 0 0 50%;
+                list-style-type: none;
+                color: #ffffff;
+                margin-bottom: 15px;
+                span.title{
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    display: inline-block;
+                    min-width: 150px;
+                }
+                span.value{
+                    margin-left: 9px;
+                }
+            }
+        }
+    }
+}
