@@ -8396,7 +8396,7 @@ textarea.form-control-lg {
 
 .btn {
   text-transform: uppercase;
-  color: #ffffff !important;
+  color: #ffffff;
   letter-spacing: 1px; }
 
 .header-area {
@@ -8439,8 +8439,11 @@ textarea.form-control-lg {
     transform: translate(-50%, -50%); }
     .page-banner_content h1, .page-banner_content .h1 {
       color: #ffffff;
-      margin-bottom: 0;
+      margin-bottom: 3px;
       font-size: 48px; }
+    .page-banner_content p {
+      margin-bottom: 0;
+      color: #ffffff; }
   .page-banner img {
     height: 240px;
     object-fit: cover; }
@@ -9272,6 +9275,56 @@ textarea.form-control-lg {
           min-width: 150px; }
         .company-info_wrapper ul li span.value {
           margin-left: 9px; }
+
+.tai-services {
+  padding: 50px 0;
+  background: transparent linear-gradient(180deg, #fff 0, #f0f0f0 100%) 0 0 no-repeat padding-box; }
+  .tai-services_wrapper {
+    box-shadow: 0 0 0 1px rgba(53, 72, 91, 0.04), 0 3px 2px rgba(0, 0, 0, 0.04), 0 7px 5px rgba(0, 0, 0, 0.02), 0 13px 10px rgba(0, 0, 0, 0.02), 0 22px 17px rgba(0, 0, 0, 0.02) !important;
+    padding: 45px;
+    background-color: #ffffff; }
+    .tai-services_wrapper img {
+      max-width: 54px; }
+    .tai-services_wrapper h6, .tai-services_wrapper .h6 {
+      font-size: 12px;
+      margin-bottom: 9px;
+      max-width: 120px; }
+    .tai-services_wrapper-content {
+      height: 144px;
+      width: 144px;
+      border-radius: 50%;
+      border: 2px solid #43b400;
+      margin: 0 auto; }
+
+.tai-service {
+  padding: 50px 0; }
+  .tai-service_title h5, .tai-service_title .h5 {
+    margin-bottom: 0;
+    padding-bottom: 18px; }
+  .tai-service_title hr {
+    margin-top: 0;
+    margin-bottom: 54px;
+    background-image: linear-gradient(90deg, #43b400, transparent);
+    border: 0;
+    height: 3px; }
+  .tai-service_content {
+    margin-bottom: 90px; }
+    .tai-service_content-icon {
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      border: 2px solid #43b400;
+      max-width: 200px;
+      margin: 0 auto; }
+      .tai-service_content-icon img {
+        max-width: 105px; }
+    .tai-service_content .btn {
+      margin-top: 45px;
+      color: #43b400; }
+      .tai-service_content .btn:hover {
+        color: #ffffff; }
 
 .ceo {
   padding: 81px 0; }
